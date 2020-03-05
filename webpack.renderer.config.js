@@ -20,7 +20,7 @@ module.exports = {
         // new webpack.HotModuleReplacementPlugin(),
         new VueLoaderPlugin(),
         new CopyPlugin([
-            { from: 'assets', to: 'assets' }
+            { from: 'app/renderer/assets', to: 'assets' }
         ])
     ]
 };

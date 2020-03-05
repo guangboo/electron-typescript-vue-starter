@@ -3,7 +3,7 @@ module.exports = {
      * This is the main entry point for your application, it's the first file
      * that runs in the main process.
      */
-    entry: './src/main.ts',
+    entry: './app/main/index.ts',
 
     // resolve: {
     //     // Add `.ts` and `.tsx` as a resolvable extension.
@@ -16,6 +16,7 @@ module.exports = {
     },
 
     resolve: {
+        extensions: [".ts", ".js"],
         alias: {
             vue: 'vue/dist/vue.js'
         }
